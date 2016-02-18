@@ -1,21 +1,52 @@
 #owl .item img{
     position: relative;
     display: block;
-    width: 100%;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 40px;
+
     height: auto;
     z-index:10;
 }
+body {
+  margin-top: 2rem; }
 
-#owl .item h1 {
-    position: absolute;
-    top: 40%;
-    left: 27%;
-    z-index: 20;
-    margin:0;
-    color: #ffffff;
-    text-align: center;
-    font-weight: 900;
-    font-size: 450%;
-    text-transform: uppercase;
-    letter-spacing: 10px;
-}
+.title-bar {
+  background: #333;
+  padding: 0.9rem; }
+
+.top-bar {
+  background: #333; }
+  .top-bar ul {
+    background: #333; }
+    .top-bar ul li {
+      background: #333; }
+      .top-bar ul li a {
+        color: #fff; }
+
+.menu-text {
+  color: #fff; }
+  @media only screen and (max-width: 40em) {
+    .menu-text {
+      display: none !important; } }
+
+@media only screen and (min-width: 40em) {
+  .top-bar .menu:last-child {
+    border-left: 1px solid #4e4e4e; }
+
+  .top-bar .menu:first-child {
+    border-left: none; }
+
+  .top-bar .menu li:not(:last-child) {
+    border-right: 1px solid #4e4e4e; } }
+.dropdown.menu .submenu {
+  border: none; }
+
+.dropdown.menu .is-dropdown-submenu-parent.is-right-arrow > a::after {
+  border-color: #fff transparent transparent; }
+
+.is-drilldown-submenu-parent > a::after {
+  border-color: transparent transparent transparent #fff; }
+
+.js-drilldown-back::before {
+  border-color: transparent #fff transparent transparent; }
