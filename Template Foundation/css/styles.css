@@ -1,0 +1,39 @@
+footer  i {
+  font-size: 2em;
+}
+
+footer .iconName {
+  font-size: 1.2em;
+  padding: 1%;
+
+}
+
+footer .callout a {
+  width: 20%;
+}
+
+footer .callout {
+  margin: 0 auto;
+}
+footer {
+  width:90%;
+  margin: 0 auto;
+}
+
+body {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/*.menu {
+  width: 100%;
+  margin: 0 auto;
+}*/
+
+
+@media (max-width: 40em){
+  footer .callout a:after {
+    content: '\A';
+    white-space: pre;
+  } 
+}
